@@ -1,0 +1,293 @@
+*{
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color:#F4F5F9;
+}
+
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box-hero{
+    background-color: #F4F5F9 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link-btn{
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.background{
+    background-color: var(--background-color);
+}
+
+.hero{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.hero h1{
+    color: rgb(72, 85, 97);
+}
+
+.box-hero a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.link-btn:hover{
+    background-color: var(--background-color);
+    color: black;
+    border: 1px solid black;
+}
+
+.link-btn:active{
+    background-color: black;
+    color: #F4F5F9;
+}
+
+
+.box-img{
+    margin-right: 60px;
+}
+
+.img-outlet img{
+    border-radius: 10px;
+}
+
+.grid img{
+    width: 300px;
+}
+.box img{
+    width: 230px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+.btn{
+    border: 1px solid black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.box-img-prime img{
+    width: 100px;
+    border-radius: 10px;
+}
+.box-img-prime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+.img-prime{
+    display: flex;
+    gap: 5px;
+}
+
+.mostrar img{
+    width: 400px;
+}
+
+
+
+h5{
+    color: rgb(119, 131, 133);
+}
+
+p{
+    color: rgb(28, 30, 32);
+}
+
+.prime{
+    display: grid;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.mostrar{
+    margin-left: 20px;
+}
+
+.mostrar img{
+    border-radius:10px;
+}
+
+.mostrar-dados{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mostrar-dados a{
+    text-decoration: none;
+}
+
+.mostrar-dados .link-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.box-img-prime img:hover{
+    transition: 0.9s;
+    transform: scale(1.1);
+}
+
+.box-img-prime img:active{
+    transition: 0.9s;
+    transform: scale(0.9);
+}
+
+
+footer{
+    background-color: rgb(27, 25, 25);
+    color: #faf4f4;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+footer h5{
+    color: #faf4f4;
+}
+
+footer h3{
+    font-size: 22px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.conteudo input{
+    min-width: 300px;
+    max-width: 350px;
+    padding: 3px;
+    border-radius: 5px;
+    outline-color: var(--background-color);
+    gap: 3px;
+    font-size: 12px;
+}
+footer .btn{
+    color: #F4F5F9;
+    border-color: #F4F5F9;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 5px;
+}
+
+.box-conteudo{
+    display: flex;
+    gap: 5px;
+}
+
+form .btn{
+    max-width: 200px;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+}
+.autor{
+    background-color:rgb(27, 25, 25) ;
+    width: 100%;
+    padding: 2px;
+    border-top: 1px solid #F4F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.autor p{
+    color: #F4F5F9;
+}
+
+.links i:hover{
+    color:black ;
+}
+
+.extra-btn button{
+    background: none;
+    border: 1px solid #F4F5F9;
+    color: #F4F5F9;
+    border-radius: 5px;
+}
+.extra-btn button:hover{
+    background-color:black ;
+    color:#f4f5f9 ;
+    border-color:black ;
+}
+
+
+@media (max-width: 768px) {
+    .box-img-prime img {
+      width: 50px;
+    }
+    .img-outlet img{
+        width: 150px;
+    }
+    .mostrar img {
+      width: 200px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .box-conteudo{
+        flex-direction: column;
+        gap: none;
+    }
+
+    .box-img-prime{
+        align-items: flex-start;
+    }
+  }
